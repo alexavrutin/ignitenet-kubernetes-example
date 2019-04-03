@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApacheIgniteNetKubernetesExample", "ApacheIgniteNetKubernetesExample\ApacheIgniteNetKubernetesExample.csproj", "{B7C89E8A-4968-47F5-BFB3-224B8A2048A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{59BB6A10-D846-40EE-AABD-A8BD1A68FB3B}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		kubernetes-deployment.yml = kubernetes-deployment.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7C89E8A-4968-47F5-BFB3-224B8A2048A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C89E8A-4968-47F5-BFB3-224B8A2048A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C89E8A-4968-47F5-BFB3-224B8A2048A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C89E8A-4968-47F5-BFB3-224B8A2048A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CB5BBA9-A61F-4DB9-858F-12722182D836}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ignitenet-kubernetes-example-deployment
+spec:
+  replicas: 1
+  minReadySeconds: 5
+  selector:
+    matchLabels:
+      app: ignitenet-kubernetes-example
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: ignitenet-kubernetes-example
+        igniteNode: "true"
+    spec:
+      containers:
+      - name: ignitenet-kubernetes-example
+        image:  alexavrutin/ignitenet-kubernetes-example:latest
+        ports:
+        - containerPort: 5000
+        - containerPort: 10801 # JDBC port number (quote service)
+        - containerPort: 11211 # REST port number (Ignite).
+        - containerPort: 47100 # communication SPI port number.
+        - containerPort: 47500 # discovery SPI port number.
+        - containerPort: 49112 # JMX port number.
+        - containerPort: 10900 # Thin clients port number.
